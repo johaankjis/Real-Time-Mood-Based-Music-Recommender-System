@@ -27,7 +27,7 @@ export function SpotifyConnect() {
       const data = await response.json()
       setStatus(data)
     } catch (error) {
-      console.error("[v0] Failed to check Spotify status:", error)
+      console.error("[] Failed to check Spotify status:", error)
     } finally {
       setLoading(false)
     }
